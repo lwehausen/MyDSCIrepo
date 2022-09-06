@@ -8,5 +8,22 @@ Q2
 cubs <- read.csv("https://raw.githubusercontent.com/gjm112/DSCI401/main/data/cubs_all_time.csv")
 
 2a. How many total games have the Cubs won and lost between 1876 and 2022?
+Find structure of data set to see how wins and losses can be summed.
+Sum wins.
+Sum losses.
+```{r}
+str(cubs)
+sum(cubs$W)
+sum(cubs$L)
+```
+2b. What year did the Cubs score the most runs? What year did the Cubs score the fewest runs? Do you have any thoughts about the year that the Cubs scored the fewest runs?
+```{r}
+which.max(cubs$R)
+which.min(cubs$R)
+```
+Most: Entry 129, or year 1894, Cubs had 1056 runs.
+Least: Entry 3, year 2020, 265 runs.
+This year was probably the worst because it was when COVID first began. Other than that, they just played a terrible season. 
 
-edit
+
+

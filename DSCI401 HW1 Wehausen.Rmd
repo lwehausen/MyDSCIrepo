@@ -20,8 +20,24 @@ sum(cubs$L)
 ```{r}
 which.max(cubs$R)
 which.min(cubs$R)
+cubs[129, "Year"]
+cubs[3,"Year"]
+
 ```
 Most: Entry 129, or year 1894, Cubs had 1056 runs.
 Least: Entry 3, year 2020, 265 runs.
 This year was probably the worst because it was when COVID first began. Other than that, they just played a terrible season. 
+
+2c. In how many seasons was the Cubs total attendance (i.e. the variable
+Attendance) over 3 million?
+```{r}
+myvars <- c("Attendance")
+cubs2 <- cubs[myvars]
+with(cubs2, cubs2$Attendance > 3000000)
+
+```
+
+There were 12 seasons where the attendance was greater than 3,000,000. 
+
+
 
