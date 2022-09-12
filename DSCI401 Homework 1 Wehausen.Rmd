@@ -1,0 +1,17 @@
+---
+title: "DSCI401 Homework 1"
+author: "Lauren Wehausen"
+date: "9/1/2022"
+output: html_document
+---
+option control i for code block
+
+Q2
+cubs <- read.csv("https://raw.githubusercontent.com/gjm112/DSCI401/main/data/cubs_all_time.csv")
+
+2a. How many total games have the Cubs won and lost between 1876 and 2022?
+
+```{r}
+
+```
+
